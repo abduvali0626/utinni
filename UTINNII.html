@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="/JAWAS/utinni.png" type="image/x-icon">
+    <link rel="stylesheet" href="/JAWAS/style.css">
+    <title>utinni</title>
+</head>
+<body>
+    <center>
+        <h1>
+            UTINNI HUYGENS IN NOW LIVE
+        </h1>
+    </center>
+  <div class="cassini">
+      <div class="img-container">
+        <img src="/JAWAS/utinni.png" alt="">
+      </div>
+    <!-- 1. Embed the audio file using the <audio> tag and give it an ID -->
+<!-- The 'preload="auto"' attribute helps load the sound faster, and you can hide it by omitting the 'controls' attribute. -->
+<audio id="myAudio" src="/JAWAS/output (2).wav" preload="auto"></audio>
+
+<!-- 2. Create the button and use the onclick attribute to call a JavaScript function -->
+<button onclick="playAudio()">Utinni?</button>
+
+<!-- 3. Add the JavaScript code to play the audio -->
+  </div>
+<script>
+  function playAudio() {
+    var audio = document.getElementById("myAudio");
+    audio.play();
+  }
+</script>
+</body>
+</html>
